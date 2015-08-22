@@ -1,0 +1,205 @@
+﻿
+/*@charset "utf-8";*/
+/***MENU VERTICAL DA MASTER PAGE***/    
+	#menu
+	{
+		background:#f9f9f9;
+		border:solid 1px #DEDEDE;
+		/*border-radius:3px;*/
+		width:130px;
+		/*padding:5px;  */  
+	}
+
+	Menu
+	{
+	color:black;
+	margin:0px;
+	background:linear-gradient(#fff 0%,#dedede 100%);
+	background:-moz-linear-gradient(#fff 0%,#dedede 100%);
+	background:-ms-linear-gradient(#fff 0%,#dedede 100%);
+	background:-o-linear-gradient(#fff 0%,#dedede 100%);
+	background:-webkit-linear-gradient(#fff 0%,#dedede 100%);
+	border:solid 1px #f9f9f9;
+	/*border-radius:5px;*/
+	padding:5px;
+	font-style: italic;
+	font-family:Calibri Light;
+	}
+
+
+	menu:hover
+	{
+	background:linear-gradient(#DEDEDE 0%, #FFF 100%);
+	background:-moz-linear-gradient(#DEDEDE 0%, #FFF 100%);
+	background:-ms-linear-gradient(#DEDEDE 0%, #FFF 100%);
+	background:-o-linear-gradient(#DEDEDE 0%, #FFF 100%);
+	background:-webkit-linear-gradient(#DEDEDE 0%, #FFF 100%);
+	/*border-radius:3px;*/
+	border:solid 1px #333;
+	color:red;
+	}
+/***FIM MENU VERTICAL DA MASTER PAGE***/  
+
+
+
+
+/***MENU HORIZONTAL DA MASTER PAGE***/    
+    .menuhorizontal2{
+     margin: 0;
+     padding: 0;
+     width: auto;
+     height: 30px;
+     background:#f9f9f9;  
+     FONT-SIZE: 12px;   
+     }
+     .menuhorizontal2 ul{ 
+     list-style: none;
+     background:#f9f9f9;
+     }
+     .menuhorizontal2 li{ 
+     width: 89px;
+     padding:0px;
+     margin: 0;
+     position: relative;
+     display: inline;
+     float: left;
+     /*border-left: #999999 thin solid;*/
+     background:#f9f9f9;
+     }
+     .menuhorizontal2 li ul{
+     display: none;
+     padding: 0;
+     margin: 0;
+     position: absolute;
+     top: 35px;
+     left: 0;
+     background:#f9f9f9;
+     } 
+     /*nível inferior do menu com display: none*/
+     .menuhorizontal2 a{
+     display: block;
+     text-decoration: none;
+     padding: 7px;
+     background-color: #CCCCCC;
+	 font-size: 13px;
+     COLOR:Black;
+     FONT-FAMILY: Arial, Helvetica, sans-serif;  
+     TEXT-DECORATION: none; 
+     FONT-WEIGHT: bold; 
+     font-weight: 400;
+     background:#f9f9f9;
+     } 
+     /* formatação da âncora e área clicável*/
+     .menuhorizontal2 li:hover ul, li.over ul{
+     display: block;
+     background:#f9f9f9;
+     } 
+     /*mostra nível inferior ao passar o cursor*/
+     .menuhorizontal2 li.btnesquerdo{
+     border: none;
+     background:#f9f9f9;
+     }
+ /***FIM DO MENU HORIZONTAL DA MASTER PAGE***/ 
+
+ .style1
+        {
+            width: 60%;
+            height: 179px;
+            font-style: italic;
+            font-family:Calibri Light;
+            
+        }
+        .style3
+        {
+            height: 100px;
+            font-style: italic;
+            font-family:Calibri Light;
+            
+        }
+        .style4
+        {
+            width: 08%;
+            height: 367px;
+            
+            font-style: italic;
+            font-family:Calibri Light;
+            background:#f9f9f9;
+            
+        }
+        
+         .Publicidade
+        {
+            width: 10%;
+            height: 77px;
+            font-style: italic;
+            font-family:Calibri Light;
+             
+        }
+        
+          .newStyle1
+        {
+        	
+            empty-cells: hide;
+            background:#f9f9f9;
+        }
+        .newStyle2
+        {
+        	width:  100%;
+            height:  60%;
+            empty-cells: hide;
+            
+        }
+        .atencao_centro
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR: #990000;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none;
+                      
+        }
+        .atencao
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR: #990000;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none
+            
+        }
+         .atencao2
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR:Black;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none
+            
+        }
+           .atencao3
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 14px;
+            COLOR:Black;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none            
+        }
+             .copyright
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 09px;
+            COLOR: blue;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none           
+        }
+         .style7
+         {
+             width: 1063px;
+         }
+         .style8
+         {
+            width: 60%;
+            height: 367px;
+         }
+ 
+  

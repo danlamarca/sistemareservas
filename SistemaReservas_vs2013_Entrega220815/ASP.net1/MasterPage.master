@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8" />
+<link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
+<script src="JS/jquery-1.9.1.js"></script>
+<script src="JS/jquery-ui-1.10.3.custom.js"></script>
+<script type src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<head id="Head1" runat="server">
+    <title>Cadastro Reservas</title>
+     <style type="text/css">
+         .style1
+        {
+            width: 60%;
+            height: 179px;
+            font-style: italic;
+            font-family:Calibri Light;
+            
+        }
+        .style3
+        {
+            height: 100px;
+            font-style: italic;
+            font-family:Calibri Light;
+            
+        }
+        .style4
+        {
+            width: 08%;
+            height: 367px;
+            
+            font-style: italic;
+            font-family:Calibri Light;
+            background:#f9f9f9;            
+        }
+        
+         .Publicidade
+        {
+            width: 10%;
+            height: 77px;
+            font-style: italic;
+            font-family:Calibri Light;             
+        }
+        
+          .newStyle1
+        {        	
+            empty-cells: hide;
+            background:#f9f9f9;
+        }
+        .newStyle2
+        {
+        	width:  100%;
+            height:  60%;
+            empty-cells: hide;            
+        }
+        .atencao_centro
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR: #990000;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none;                      
+        }
+        .atencao
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR: #990000;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none            
+        }
+         .atencao2
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 11px;
+            COLOR:Black;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none            
+        }
+           .atencao3
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 14px;
+            COLOR:Black;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none            
+        }
+             .copyright
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: 09px;
+            COLOR: blue;
+            FONT-FAMILY: Arial, Helvetica, sans-serif;
+            TEXT-DECORATION: none           
+        }
+         .style7
+         {
+             width: 1063px;
+         }
+         .style8
+         {
+            width: 60%;
+            height: 367px;
+         }
+    </style>
+    
+</head>
+    <form id="form1" runat="server">
+    <div> 
+        <table class="style1" align="left">
+                
+            <tr class="newStyle1">
+                <td class="style3" colspan="2">                                        
+                        <h2> Cadastro de Reservas </h2>                         
+                        <asp:Image ID="Image_Principal_1" ImageAlign="Middle" runat="server" ImageUrl="~/Image/banner_reservation.jpg" style="width: 400px; margin-left: 01px" Height="60px" Width="434px" /> &nbsp;&nbsp                                                        
+                        <br />                        
+
+                        <tr class="newStyle1">
+                            <td><asp:ContentPlaceHolder id="MenuHorizontal_Menu" runat="server"/></td>
+                            <td class="style7"><asp:ContentPlaceHolder id="MenuHorizontal" runat="server"/></td>
+                        </tr>                                
+               </td> 
+            </tr>  
+            
+            <tr>
+                <td class="style4"> 
+                    <b><font color="black" class="atencao">Menu Principal:</font></b>                                                     
+                    <asp:Image ID="Image_Menu" runat="server" ImageAlign="TextTop" ImageUrl="~/Image/banner.jpg" style="width: 100px; margin-left: 01px" Height="20px" Width="108px"></asp:Image>
+                    <br /><br/> 
+                    <div id="menu">
+                        <menu><a href="Apresentacao.aspx" class="atencao2">Apresentação</a></menu> 
+                        <menu><a href="Efetuar_Reserva_Processa.aspx" class="atencao2">Reserva</a></menu> 
+                        <menu><font class="atencao2">Editar/Excluir Reserva</font></menu> 
+                        <menu><a href="ConsultarReservas.aspx" class="atencao2">Consultar Reserva</a></menu>                                                                    
+                        </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>                             
+                    </div>
+                </td>
+                             
+                <td class="style8">              
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" ></asp:ContentPlaceHolder>  
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    </br></br></br></br></br></br></br></br></br>                 
+                </td>  
+            </tr>
+                        
+            <tr>
+                <td></td>
+                <td class="style7"><asp:Label cssclass="copyright" id="lbl_copyright" runat="server" visible=true text="@Copyright Cadastro de Reservas, autor Danilo Moreira." /></td>
+            </tr>
+
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>

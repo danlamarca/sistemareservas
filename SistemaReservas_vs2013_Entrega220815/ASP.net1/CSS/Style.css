@@ -1,0 +1,306 @@
+﻿hmtl;body 
+{
+	margin: 0px;
+	padding: 0px;
+}
+body 
+{
+	background-color:#efefef;
+	color: #333;
+	font-family: Verdana,Helvetica,Sans-Serif;
+	font-size: .75em;
+}
+
+
+.atencao
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #990000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.atencao:hover
+{
+    TEXT-DECORATION: underline
+}
+
+.creditos
+{
+    FONT-SIZE: 11px;
+    COLOR: #999999;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.explicacao
+{
+    FONT-SIZE: 12px;
+    COLOR: #000066;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.linkcategoria
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.loginbusca
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 13px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma
+}
+.menulat
+{
+    DISPLAY: block;
+    FONT-SIZE: 11px;
+    VERTICAL-ALIGN: middle;
+    COLOR: #000000;
+    LINE-HEIGHT: 20px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+    
+}
+.menulatverm
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #990000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.nomecampos
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #666699;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.navegacao
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #959595;
+    FONT-FAMILY: Verdana, Tahoma;
+    TEXT-DECORATION: none
+}
+.navegacao:hover
+{
+    TEXT-DECORATION: underline
+}
+.texto
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.texto:hover
+{
+    TEXT-DECORATION: underline
+}
+
+.texto_vermelho
+{
+    FONT-SIZE: 11px;
+    COLOR: #990000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.texto_vermelho:hover
+{
+    TEXT-DECORATION: underline
+}
+.texto2
+{
+    FONT-SIZE: 12px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.texto2:hover
+{
+    TEXT-DECORATION: underline
+}
+.texto3
+{
+    FONT-SIZE: 9px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.texto3:hover
+{
+    TEXT-DECORATION: underline
+}
+.titulo
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-TRANSFORM: uppercase;
+    COLOR: #666699;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.titulotab
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    TEXT-TRANSFORM: uppercase;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.titulotabmin
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.titulotab:hover
+{
+    TEXT-DECORATION: underline
+}
+.usuario
+{
+    FONT-SIZE: 13px;
+    COLOR: white;
+    FONT-FAMILY: Arial, helvetica, SansSerif;
+    TEXT-DECORATION: none
+}
+.textoverde
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #7b9067;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.textoverm
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 9px;
+    COLOR: #9b1010;
+    FONT-STYLE: normal;
+    FONT-FAMILY: Verdana, Helvetica, sans-serif;
+	TEXT-DECORATION: none
+}
+.textoverm:hover
+{
+    TEXT-DECORATION: underline
+}
+.textoverm2
+{
+    FONT-SIZE: 11px;
+    COLOR: #9b1010;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.textoverm2:hover
+{
+    TEXT-DECORATION: underline
+}
+.titulonov
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15px;
+    COLOR: #000000;
+    FONT-FAMILY: Verdana, Tahoma
+}
+.radio
+{
+    BORDER-TOP-WIDTH: medium;
+    BORDER-LEFT-COLOR: black;
+    BORDER-BOTTOM-COLOR: black;
+    BORDER-TOP-COLOR: #666666;
+    BORDER-RIGHT-COLOR: black
+}
+li
+{  
+    list-style-image: url(/imagens/bu_bolinha_azul.gif);
+    line-height: 1.5
+}
+
+.rodape
+{
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+    FONT-FAMILY: arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+
+.texto_verm_bold
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 11px;
+    COLOR: #9b1010;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none
+}
+.texto_verm_bold:hover
+{
+    TEXT-DECORATION: underline
+}
+
+#wstooltip{
+	position: absolute;
+	border: 1px solid #666;
+
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+
+	width: auto;
+	padding: 5px;
+
+	background-color: yellow;
+	visibility: hidden;
+	z-index: 100;
+
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+
+ 	font-size: 11px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none
+}
+
+#wsgreentooltip{
+	position: absolute;
+	border: 1px solid #666;
+
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+
+	width: auto;
+	padding: 5px;
+
+	background-color: Green;
+	visibility: hidden;
+	z-index: 100;
+
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+
+ 	font-size: 11px;
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none
+}
+.tachado
+{
+    FONT-SIZE: 11px;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: line-through;
+}
+.tachado:hover
+{
+    TEXT-DECORATION: line-through;
+}
