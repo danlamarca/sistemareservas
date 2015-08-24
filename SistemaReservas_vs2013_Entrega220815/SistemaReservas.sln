@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library1", "ClassLibrary1\Library1.csproj", "{3D0872AC-6695-476A-8A0F-115AEEA1DF54}"
 EndProject
@@ -24,6 +24,16 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.net1", "ASP.net1\", "{5
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "39935"
+		SlnRelativePath = "ASP.net1\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelagem", "Modelagem", "{364DC529-EF07-43D2-8FE7-DE91E6F5FB46}"
+	ProjectSection(SolutionItems) = preProject
+		MODELAGEM\Modelagem\Modelagem SistemaReservas.erwin = MODELAGEM\Modelagem\Modelagem SistemaReservas.erwin
+		MODELAGEM\Modelagem\Modelagem SistemaReservas.png = MODELAGEM\Modelagem\Modelagem SistemaReservas.png
+		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DDL.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DDL.sql
+		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DML.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DML.sql
+		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_Indices.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_Indices.sql
 	EndProjectSection
 EndProject
 Global
