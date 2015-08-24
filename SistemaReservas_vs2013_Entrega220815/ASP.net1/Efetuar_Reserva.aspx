@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="MenuHorizontal_Menu" ContentPlaceHolderID="MenuHorizontal_Menu" runat="server">
-    <b><font class="menuhorizontal2">Reserva</font></b>
+    <b><font class="menuhorizontal2">Reserva/Cadastrar</font></b>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MenuHorizontal" Runat="Server">
