@@ -35,6 +35,9 @@
     <tr>
 		<td>&nbsp;</td>
           <td align="center">  
+            <asp:ImageButton Id="Btn_img_sim" Visible="false" border="0" ImageURL="Image/bt_sim.gif" runat="server" onclick="Btn_img_sim_click" />
+            <asp:ImageButton Id="Btn_img_ok" Visible="false" border="0" ImageURL="Image/bt_ok_azul.gif" runat="server"  onclick="Btn_img_ok_click" />
+            <asp:ImageButton Id="Btn_img_nao" Visible="false" border="0" ImageURL="Image/bt_nao.gif" runat="server" onclick="Btn_img_nao_click"/>
           </td>
         <td>&nbsp;</td>
       

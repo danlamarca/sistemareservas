@@ -29,6 +29,7 @@ public partial class Minha_Cesta : System.Web.UI.Page
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.Redirect("Mensagens.aspx?codigo=1&parametro=1"  + "&botao_ok=S&acao_ok=Apresentacao.aspx");
     }
 
 
