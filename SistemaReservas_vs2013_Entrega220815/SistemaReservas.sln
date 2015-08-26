@@ -31,9 +31,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modelagem", "Modelagem", "{
 	ProjectSection(SolutionItems) = preProject
 		MODELAGEM\Modelagem\Modelagem SistemaReservas.erwin = MODELAGEM\Modelagem\Modelagem SistemaReservas.erwin
 		MODELAGEM\Modelagem\Modelagem SistemaReservas.png = MODELAGEM\Modelagem\Modelagem SistemaReservas.png
-		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DDL.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DDL.sql
-		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DML.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_DML.sql
-		..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_Indices.sql = ..\..\..\..\Desktop\SistemaReservasGit\SistemaReservas_vs2013_Entrega220815\MODELAGEM\Script_Indices.sql
+		MODELAGEM\Modelagem\Script_DDL.sql = MODELAGEM\Modelagem\Script_DDL.sql
+		MODELAGEM\Modelagem\Script_DML.sql = MODELAGEM\Modelagem\Script_DML.sql
+		MODELAGEM\Modelagem\Script_Indices.sql = MODELAGEM\Modelagem\Script_Indices.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Material de Suporte", "Material de Suporte", "{9A77FF7F-FE9D-4650-9824-22CD999291A3}"
+	ProjectSection(SolutionItems) = preProject
+		Material de Suporte\Referencias.txt = Material de Suporte\Referencias.txt
 	EndProjectSection
 EndProject
 Global

@@ -3,7 +3,7 @@ USE SistemaReservas
 BEGIN TRANSACTION
 Print 'Carga inicial nas tabelas'  
 
---TB_MENSAGEM
+--TB_MENSAGEM 
 IF NOT EXISTS(SELECT * FROM TB_MENSAGEM WITH(NOLOCK) WHERE COD='0')
 BEGIN
 	insert into TB_MENSAGEM values(0,'Atenção!')
@@ -11,7 +11,12 @@ END
 
 IF NOT EXISTS(SELECT * FROM TB_MENSAGEM WITH(NOLOCK) WHERE COD='01')
 BEGIN
-	insert into TB_MENSAGEM values(01,'Deseja confirmar reservar?(S/N)')
+	insert into TB_MENSAGEM values(01,'Deseja confirmar reservar?(S/N)') 
+END
+
+IF NOT EXISTS(SELECT * FROM TB_MENSAGEM WITH(NOLOCK) WHERE COD='02')
+BEGIN
+	insert into TB_MENSAGEM values(2,'Erro no Processamento da Página, favor informar o codigo do erro ao responsável: Danilo Moreira, tel.: 11-953648750,email: danilo.lamarca@hotmail.com. Codigo do ERRO: [PARAM1]') 
 END
 
 
@@ -23,6 +28,35 @@ BEGIN
 END
 SET IDENTITY_INSERT TB_USUARIO OFF
 
+
+--TB_ACOMPANHAMENTO_ITEM
+IF NOT EXISTS(SELECT * FROM TB_ACOMPANHAMENTO_ITEM WITH(NOLOCK) WHERE item='Café + açucar')
+BEGIN
+	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Café + açucar','Café com açucar')
+END
+
+IF NOT EXISTS(SELECT * FROM TB_ACOMPANHAMENTO_ITEM WITH(NOLOCK) WHERE item='Café + adoçante')
+BEGIN
+	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Café + adoçante','Café com adoçante')
+END
+
+IF NOT EXISTS(SELECT * FROM TB_ACOMPANHAMENTO_ITEM WITH(NOLOCK) WHERE item='Chá + adoçante')
+BEGIN
+	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Chá + adoçante','Chá com adoçante')
+END
+
+IF NOT EXISTS(SELECT * FROM TB_ACOMPANHAMENTO_ITEM WITH(NOLOCK) WHERE item='Chá + açucar')
+BEGIN
+	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Chá + açucar','Chá com açucar')
+END
+
+IF NOT EXISTS(SELECT * FROM TB_ACOMPANHAMENTO_ITEM WITH(NOLOCK) WHERE item='Leite')
+BEGIN
+	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Leite','Leite')
+END
+
+
+
 Print 'Finalização Carga inicial nas tabelas'
 
 IF @@ERROR<>0
@@ -31,7 +65,7 @@ ELSE
 	COMMIT 
 	  
 
------------------------------------------------------------------------
+-----------------------------------------------------------------------    
 
 Print 'Criação das procedures' 
 
