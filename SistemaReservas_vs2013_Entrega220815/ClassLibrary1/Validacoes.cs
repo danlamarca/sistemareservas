@@ -1,12 +1,17 @@
 ﻿using System;
-using System.Data.SqlClient;
+using System.Collections;
+using System.Configuration;
 using System.Data;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Windows.Forms;
+using System.Xml.Linq;
 using Library1;
 using System.Text.RegularExpressions;
-
+    
 namespace Library1
 {
 
@@ -18,6 +23,46 @@ namespace Library1
         Aceitavel,
         Forte,
         Segura
+    }
+       
+
+    //CRIAR UMA CLASSE DE VERIFICAÇÃO DE USUARIO LOGADO
+    public class RetornaUsuario
+    {
+        ClsBancoDeDados oDB = new ClsBancoDeDados();
+        Tratamento_Erros Tr_Error = new Tratamento_Erros();    
+
+        //variaveis globais de pagina:
+        string strSQL;
+        int retorna_erro;
+    
+        public string[] ValidaUsuario(int codigo) 
+        {
+            string[] user = new string[3];
+ 
+            strSQL = "exec SP_TB_USUARIO_SEL " + codigo;
+            DataTableReader ds_usuario = oDB.NewReader(strSQL);
+           
+            if (oDB.MensagemUltimoComando.ToString() == "Erro")
+            {
+                string retorno_xml = oDB.MensagemUltimoComando.ToString();
+                string pagina = "Validacoes.cs";
+                retorna_erro = Tr_Error.Grava_Excecao("user1", "user1", retorno_xml, strSQL, pagina);               
+            }
+
+            if (ds_usuario != null)
+            {
+                while (ds_usuario.Read())
+                {
+                    user[0] = ds_usuario["codusuario"].ToString();
+                    user[1] = ds_usuario["nome"].ToString();
+                    user[2] = ds_usuario["matricula"].ToString(); 
+                }
+            }
+            ds_usuario.Close();
+
+            return user;
+        }
     }
 
     public class ChecaForcaSenha
