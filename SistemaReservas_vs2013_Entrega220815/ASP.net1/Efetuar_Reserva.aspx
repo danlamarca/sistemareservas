@@ -59,6 +59,12 @@
                 <asp:ListItem text="17:00 -- 18:00" value="10" runat="server"></asp:ListItem>
             </asp:DropDownList>
            </td>  
+
+          <td></td><td></td><td></td>            
+           <td>
+            <font class="atencao">Sala:</font></br> 
+            <asp:DropDownList id="drp_sala" name="drp_sala" runat=server Width="130px"></asp:DropDownList>     
+           </td>
            <td></td><td></td><td></td>            
            <td>
             <font class="atencao">Acompanhamento:</font></br> 

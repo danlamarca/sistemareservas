@@ -30,6 +30,7 @@ public partial class Efetuar_Compra : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
+            //Carrega Acompanhamento:
             strSQL = "Select CODACOMPANHAMENTOITEM,ITEM from tb_acompanhamento_item(nolock)";
             DataTableReader ds_acompanha = oDB.NewReader(strSQL);
             //carrega lista de acompanhamentos:
@@ -50,13 +51,15 @@ public partial class Efetuar_Compra : System.Web.UI.Page
                 }
             }
             ds_acompanha.Close();
+
+            //Carrega Sala:
         }
 
     }
 
     protected void Btn_img_Avancar_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Efetuar_Reserva_Processa.aspx?Acompanhamento=" + drp_acompanhamento.SelectedValue.ToString());
+        Response.Redirect("Efetuar_Reserva_Processa.aspx?Acompanhamento=" + drp_acompanhamento.SelectedValue.ToString() + "&Data=" + txt_datareserva.Text.ToString().Replace("/", "-") + "&Hora=" + drp_hora.Text.ToString());
     }
 }
     
