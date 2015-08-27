@@ -16,8 +16,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         //Carregando as Sessões  
-        Session["CGC"] = "64968218000117";
-        Session["Matricula"] = "0123";
+        //Carregar info de usuario logado!
     }
 
     protected void Btn_Comprar_Onclick(Object sender, EventArgs e)

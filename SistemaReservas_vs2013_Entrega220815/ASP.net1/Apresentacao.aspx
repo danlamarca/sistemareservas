@@ -8,6 +8,6 @@
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        <font class="atencao" >!!! Bem vindo ao Sistema de Reservas <%=Session["User_Nome"]%>!!!</br>
+        <font class="atencao" >!!! <%=Session["User_Nome"]%>, bem vindo ao Sistema de Reservas!!!</br>
         Clique no meu ao lado para iniciar sua reserva!</font>
 </asp:Content> 

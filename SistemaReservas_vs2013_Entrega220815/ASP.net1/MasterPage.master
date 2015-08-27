@@ -131,7 +131,7 @@
                     <br /><br/> 
                     <div id="menu">
                         <menu><a href="Apresentacao.aspx" class="atencao2">Apresentação</a></menu> 
-                        <menu><a href="Efetuar_Reserva_Processa.aspx" class="atencao2">Reserva</a></menu> 
+                        <menu><a href="Efetuar_Reserva.aspx" class="atencao2">Reserva</a></menu> 
                         <menu><font class="atencao2">Editar/Excluir Reserva</font></menu> 
                         <menu><a href="ConsultarReservas.aspx" class="atencao2">Consultar Reserva</a></menu>                                                                    
                         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>                             

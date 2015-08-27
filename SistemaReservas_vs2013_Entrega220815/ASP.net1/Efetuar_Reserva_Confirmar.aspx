@@ -10,10 +10,7 @@
     <ul class="menuhorizontal2">
 
      <li><a href="Efetuar_Reserva.aspx">Cadastrar</b></font></a>
-     </li>
-     
-     <li><a href="Efetuar_Reserva_Verificar.aspx">Verificar</a>
-     </li>
+     </li>      
      
      <li><a href="Efetuar_Reserva_Confirmar.aspx"><font color="red"><b>Confirmar</b></a>
      </li>

@@ -17,19 +17,19 @@ public partial class Minha_Cesta : System.Web.UI.Page
 {
     //Instanciando todas as classes
     ClsBancoDeDados oDB = new ClsBancoDeDados();
-    Tratamento_Erros Tr_Error = new Tratamento_Erros();
-    Valicoes_num Val_Num = new Valicoes_num();
+    Tratamento_Erros Tr_Error = new Tratamento_Erros();     
 
     //Carregando as Sessões  
     string strSQL;
     int retorna_erro;
-    int Ped_Temporario;
-
-
+    int Ped_Temporario; 
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Redirect("Mensagens.aspx?codigo=1&parametro=1"  + "&botao_ok=S&acao_ok=Apresentacao.aspx");
+        //if (btn_tal == "OK")
+        //{
+        //    Response.Redirect("Mensagens.aspx?codigo=1&parametro=1"  + "&botao_ok=S&acao_ok=Apresentacao.aspx");
+        //}
     }
 
 

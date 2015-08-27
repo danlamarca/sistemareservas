@@ -10,10 +10,7 @@
 
      <li><a href="Efetuar_Reserva.aspx"><font color="red"><b>Cadastrar</b></font></a>
      </li>
-     
-     <li><a href="Efetuar_Reserva_Verificar.aspx">Verificar</a>
-     </li>
-     
+              
      <li><a href="Efetuar_Reserva_Confirmar.aspx">Confirmar</a>
      </li>
        
@@ -65,7 +62,11 @@
            <td></td><td></td><td></td>            
            <td>
             <font class="atencao">Acompanhamento:</font></br> 
-            <asp:DropDownList id="drp_acompanhamento" name="drp_acompanhamento" runat=server Width="114px"></asp:DropDownList>     
+            <asp:DropDownList id="drp_acompanhamento" name="drp_acompanhamento" runat=server Width="130px"></asp:DropDownList>     
+           </td>
+          <td></td><td></td><td></td>            
+           <td>
+            <asp:ImageButton Id="Btn_img_Avancar" Visible="true" align="left" ImageURL="Image/botoes/bt_az_proxima.gif" runat="server" onclick="Btn_img_Avancar_Click" />    
            </td>        
       </tr> 
     </table>

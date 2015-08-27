@@ -28,8 +28,6 @@ public partial class Efetuar_Compra : System.Web.UI.Page
     
     protected void Page_Load(object sender, EventArgs e)
     {
-        //drp_acompanhamento
-
         if (!IsPostBack)
         {
             strSQL = "Select CODACOMPANHAMENTOITEM,ITEM from tb_acompanhamento_item(nolock)";
@@ -54,7 +52,12 @@ public partial class Efetuar_Compra : System.Web.UI.Page
             ds_acompanha.Close();
         }
 
-    }       
+    }
+
+    protected void Btn_img_Avancar_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Efetuar_Reserva_Processa.aspx?Acompanhamento=" + drp_acompanhamento.SelectedValue.ToString());
+    }
 }
     
     
