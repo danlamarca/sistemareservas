@@ -41,7 +41,7 @@
       <tr>    
           <td>
             <font class="atencao">Informe a Data:</font></br>        
-            <asp:TextBox id="txt_datareserva" runat=server Width="114px" class="datepicker" />
+            <asp:TextBox id="txt_datareserva" runat=server Width="114px" class="datepicker" Height="16px" />
           </td>           
           <td></td><td></td><td></td>            
           <td>
