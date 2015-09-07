@@ -55,7 +55,27 @@ BEGIN
 	insert into TB_ACOMPANHAMENTO_ITEM(item,descricao) values('Leite','Leite')
 END
 
+--TB_FILIAL
+IF NOT EXISTS(SELECT * FROM tb_filial WITH(NOLOCK) WHERE CODFILIAL='1')
+BEGIN
+	insert into tb_filial(descricao,LOCALIDADE) values('FIL-SP','São Paulo')
+END
 
+IF NOT EXISTS(SELECT * FROM tb_filial WITH(NOLOCK) WHERE CODFILIAL='2')
+BEGIN
+	insert into tb_filial(descricao,LOCALIDADE) values('FIL-MG','Minas Gerais')
+END
+
+--tb_sala
+IF NOT EXISTS(SELECT * FROM tb_sala WITH(NOLOCK) WHERE CODSALA='1')
+BEGIN
+	insert into tb_sala(CODFILIAL,DESCRICAO) values('1','SL-São Paulo')
+END
+
+IF NOT EXISTS(SELECT * FROM tb_sala WITH(NOLOCK) WHERE CODSALA='2')
+BEGIN
+	insert into tb_sala(CODFILIAL,DESCRICAO) values('2','SL-Minas Gerais')
+END 
 
 Print 'Finalização Carga inicial nas tabelas'
 
