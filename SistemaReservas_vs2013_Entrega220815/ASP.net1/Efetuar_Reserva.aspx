@@ -47,16 +47,16 @@
           <td>
             <font class="atencao">Informe o Horário:</font></br> 
             <asp:DropDownList id="drp_hora" name="drp_hora" runat=server Width="114px">
-                <asp:ListItem text="08:00 -- 09:00" value="1" runat=server></asp:ListItem>
-                <asp:ListItem text="09:00 -- 10:00" value="2" runat="server"></asp:ListItem>
-                <asp:ListItem text="10:00 -- 11:00" value="3" runat="server"></asp:ListItem>
-                <asp:ListItem text="11:00 -- 12:00" value="4" runat="server"></asp:ListItem>
-                <asp:ListItem text="12:00 -- 13:00" value="5" runat="server"></asp:ListItem>
-                <asp:ListItem text="13:00 -- 14:00" value="6" runat="server"></asp:ListItem>
-                <asp:ListItem text="14:00 -- 15:00" value="7" runat="server"></asp:ListItem>
-                <asp:ListItem text="15:00 -- 16:00" value="8" runat="server"></asp:ListItem>
-                <asp:ListItem text="16:00 -- 17:00" value="9" runat="server"></asp:ListItem>
-                <asp:ListItem text="17:00 -- 18:00" value="10" runat="server"></asp:ListItem>
+                <asp:ListItem text="08:00 - 09:00" value="1" runat=server></asp:ListItem>
+                <asp:ListItem text="09:00 - 10:00" value="2" runat="server"></asp:ListItem>
+                <asp:ListItem text="10:00 - 11:00" value="3" runat="server"></asp:ListItem>
+                <asp:ListItem text="11:00 - 12:00" value="4" runat="server"></asp:ListItem>
+                <asp:ListItem text="12:00 - 13:00" value="5" runat="server"></asp:ListItem>
+                <asp:ListItem text="13:00 - 14:00" value="6" runat="server"></asp:ListItem>
+                <asp:ListItem text="14:00 - 15:00" value="7" runat="server"></asp:ListItem>
+                <asp:ListItem text="15:00 - 16:00" value="8" runat="server"></asp:ListItem>
+                <asp:ListItem text="16:00 - 17:00" value="9" runat="server"></asp:ListItem>
+                <asp:ListItem text="17:00 - 18:00" value="10" runat="server"></asp:ListItem>
             </asp:DropDownList>
            </td>  
 

@@ -79,7 +79,12 @@ public partial class Efetuar_Compra : System.Web.UI.Page
 
     protected void Btn_img_Avancar_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Efetuar_Reserva_Processa.aspx?Acompanhamento=" + drp_acompanhamento.SelectedValue.ToString() +"&Sala="+drp_sala.SelectedValue.ToString()+ "&Data=" + txt_datareserva.Text.ToString().Replace("/", "-") + "&Hora=" + drp_hora.Text.ToString());
+        char[] delimiterChars = {'-'};
+
+        string[] sHora = new string[2];
+        sHora = drp_hora.SelectedItem.ToString().Replace(" ", "").Split(delimiterChars);
+
+        Response.Redirect("Efetuar_Reserva_Processa.aspx?Acompanhamento=" + drp_acompanhamento.SelectedValue.ToString() + "&Sala=" + drp_sala.SelectedValue.ToString() + "&Data=" + txt_datareserva.Text.ToString().Replace("/", "-") + "&HoraIni=" + sHora[0].ToString() +"&HoraFim="+ sHora[1].ToString());
     }
 }
     

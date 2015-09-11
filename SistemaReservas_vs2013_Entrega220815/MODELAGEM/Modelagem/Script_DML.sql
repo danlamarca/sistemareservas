@@ -112,6 +112,14 @@ BEGIN
 END
 
 GO
+
+IF EXISTS(SELECT * FROM SYS.PROCEDURES WHERE NAME = 'SP_TB_RESERVA_TEMP_INS') 
+BEGIN	
+	drop PROCEDURE dbo.SP_TB_RESERVA_TEMP_INS	
+END
+
+
+GO
 --Área de criação das procs:
 CREATE PROCEDURE SP_SEL_TB_MENSAGEM
 @cod int
@@ -156,6 +164,37 @@ CREATE PROCEDURE SP_INS_TB_RESERVA_TEMP
 	  select @numreserva[numped]
 
   End
+
+ GO
+
+
+CREATE PROCEDURE SP_TB_RESERVA_TEMP_INS
+@acompanhamento int,
+@sala int,
+@user int,
+@data varchar(10),
+@horaini varchar(10),
+@horafim varchar(10),
+@descricao varchar(1000)
+
+/*
+set @acompanhamento =1
+set @sala =1
+set @user =1
+set @data ='15-09-2015'
+set @horaini ='08:00'
+set @horafim ='09:00'
+set @descricao =''
+*/
+
+As Begin    
+	Insert into TB_RESERVA_TEMP(CODSALA,CODUSUARIO,DATAINICIO,DATAFIM,DESCRICAO,CODACOMPANHAMENTOITEM)
+	VALUES(@sala, @user, convert(datetime,@data+' '+@horaini,103), convert(datetime,@data+' '+@horafim,103), @descricao, @acompanhamento)	
+	
+	select SCOPE_IDENTITY()[codreservatemp]
+End
+
+
 
 
 GO
