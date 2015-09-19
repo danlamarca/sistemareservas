@@ -47,9 +47,8 @@ public partial class Efetuar_compra_processa : System.Web.UI.Page
                 string pagina = "Efetuar_Reserva_Processa.aspx";
                 retorna_erro = Tr_Error.Grava_Excecao(Session["User_Nome"].ToString(), Session["User_Matricula"].ToString(), retorno_xml, strSQL, pagina);
                 Response.Redirect("Mensagens.aspx?codigo=2&parametro=" + retorna_erro + "&botao_ok=S&acao_ok=Apresentacao.aspx");
-
             }
-            if (ds_reservatemp != null)
+            if (ds_reservatemp != null) 
             {
                 while (ds_reservatemp.Read())
                 {

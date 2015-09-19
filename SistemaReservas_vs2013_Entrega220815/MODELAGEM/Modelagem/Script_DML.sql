@@ -118,6 +118,26 @@ BEGIN
 	drop PROCEDURE dbo.SP_TB_RESERVA_TEMP_INS	
 END
 
+GO
+
+IF EXISTS(SELECT * FROM SYS.PROCEDURES WHERE NAME = 'SP_TB_RESERVA_TEMP_SEL') 
+BEGIN	
+	drop PROCEDURE dbo.SP_TB_RESERVA_TEMP_SEL	
+END
+
+GO
+
+IF EXISTS(SELECT * FROM SYS.PROCEDURES WHERE NAME = 'SP_TB_RESERVA_TEMP_DEL') 
+BEGIN	
+	drop PROCEDURE dbo.SP_TB_RESERVA_TEMP_DEL	
+END
+
+GO
+
+IF EXISTS(SELECT * FROM SYS.PROCEDURES WHERE NAME = 'SP_TB_RESERVA_INS') 
+BEGIN	
+	drop PROCEDURE dbo.SP_TB_RESERVA_INS	
+END
 
 GO
 --Área de criação das procs:
@@ -194,8 +214,48 @@ As Begin
 	select SCOPE_IDENTITY()[codreservatemp]
 End
 
+GO
 
+CREATE PROCEDURE SP_TB_RESERVA_TEMP_SEL
+@codreserva int
 
+As Begin
+	Select b.DESCRICAO[sala],
+	       c.DESCRICAO[acompanhamento],
+		   a.DATAINICIO[dtini],
+		   a.DATAFIM[dtfim] 
+	from tb_reserva_temp a with(nolock)
+	inner join tb_sala b with(nolock)
+	  on b.CODSALA = a.CODSALA
+    inner join TB_ACOMPANHAMENTO_ITEM c with(nolock)
+	  on c.CODACOMPANHAMENTOITEM = a.CODACOMPANHAMENTOITEM
+    where a.CODRESERVATEMP= @codreserva
+End
+
+GO
+
+CREATE PROCEDURE SP_TB_RESERVA_TEMP_DEL	
+@codreserva int
+
+As Begin
+	DELETE from tb_reserva_temp where codreservatemp=@codreserva
+End
+
+GO
+
+CREATE PROCEDURE SP_TB_RESERVA_INS
+@codreserva int
+
+As Begin
+	set identity_insert tb_reserva on
+
+	Insert into tb_reserva(CODRESERVA,CODSALA,CODUSUARIO,DATAINICIO,DATAFIM,DESCRICAO,CODACOMPANHAMENTOITEM)
+		select @codreserva,CODSALA,CODUSUARIO,DATAINICIO,DATAFIM,DESCRICAO,CODACOMPANHAMENTOITEM
+		from TB_RESERVA_TEMP with(nolock)
+		where CODRESERVATEMP= @codreserva 
+	
+	set identity_insert tb_reserva off
+End
 
 GO
 Print 'Finalização Criação das procedures'
