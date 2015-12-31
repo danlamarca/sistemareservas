@@ -24,7 +24,7 @@ END
 SET IDENTITY_INSERT TB_USUARIO ON
 IF NOT EXISTS(SELECT * FROM TB_USUARIO WITH(NOLOCK) WHERE Codusuario='1')
 BEGIN
-	insert into TB_USUARIO(Codusuario,Nome,Matricula) values('1','Danilo','123')
+	insert into TB_USUARIO(Codusuario,Nome,Matricula,Endereco) values('1','Danilo','123','Maria do Carmo 820')
 END
 SET IDENTITY_INSERT TB_USUARIO OFF
 

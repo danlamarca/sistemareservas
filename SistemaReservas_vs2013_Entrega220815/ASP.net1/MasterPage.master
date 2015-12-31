@@ -109,45 +109,49 @@
 </head>
     <form id="form1" runat="server">
     <div> 
-        <table class="style1" align="left">
+        <table style="width:600px;height:300px" align="left">
                 
-            <tr class="newStyle1">
-                <td class="style3" colspan="2">                                        
+            <tr>
+                <td colspan="2">                                        
                         <h2> Cadastro de Reservas </h2>                         
                         <asp:Image ID="Image_Principal_1" ImageAlign="Middle" runat="server" ImageUrl="~/Image/banner_reservation.jpg" style="width: 400px; margin-left: 01px" Height="60px" Width="434px" /> &nbsp;&nbsp                                                        
                         <br />                        
 
-                        <tr class="newStyle1">
+                        <tr style="width:20px;height:20px">
                             <td><asp:ContentPlaceHolder id="MenuHorizontal_Menu" runat="server"/></td>
                             <td class="style7"><asp:ContentPlaceHolder id="MenuHorizontal" runat="server"/></td>
                         </tr>                                
                </td> 
             </tr>  
             
-            <tr>
-                <td class="style4"> 
-                    <b><font color="black" class="atencao">Menu Principal:</font></b>                                                     
+            <tr style="width:90px;height:50px">
+                <td> 
+                    <b><font color="black" class="atencao">Menu Principal:</font></b></br>                                                     
                     <asp:Image ID="Image_Menu" runat="server" ImageAlign="TextTop" ImageUrl="~/Image/banner.jpg" style="width: 100px; margin-left: 01px" Height="20px" Width="108px"></asp:Image>
                     <br /><br/> 
                     <div id="menu">
                         <menu><a href="Apresentacao.aspx" class="atencao2">Apresentação</a></menu> 
                         <menu><a href="Efetuar_Reserva.aspx" class="atencao2">Reserva</a></menu> 
-                        <menu><font class="atencao2">Editar/Excluir Reserva</font></menu> 
-                        <menu><a href="ConsultarReservas.aspx" class="atencao2">Consultar Reserva</a></menu>                                                                    
+                        <menu><font class="atencao2">Editar/Excluir</font></menu> 
+                        <menu><a href="ConsultarReservas.aspx" class="atencao2">Consultar Reserva</a></menu>  
+                        <menu><a href="Cad_Cliente.aspx" class="atencao2">Cadastro Cliente</a></menu>                                                                   
                         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>                             
                     </div>
                 </td>
+                
                              
-                <td class="style8">              
-                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" ></asp:ContentPlaceHolder>  
-                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
-                    </br></br></br></br></br></br></br>                
+                <td>        
+                    <div style="width:950px;height:510px;overflow:auto"> 
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" ></asp:ContentPlaceHolder>
+                    </div>                                           
                 </td>  
+                  
+                
             </tr>
                         
             <tr>
-                <td></td>
-                <td class="style7"><asp:Label cssclass="copyright" id="lbl_copyright" runat="server" visible=true text="@Copyright Cadastro de Reservas, autor Danilo Moreira." /></td>
+                <td><asp:Label cssclass="copyright" id="lbl_copyright" runat="server" visible=true text="@Copyright Cadastro Reservas, Danilo Moreira"/></td>
+                <td class="style7"></td>
             </tr>
 
         </table>

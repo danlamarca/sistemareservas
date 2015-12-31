@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml.Linq;
 using Library1;
-
+using Library1.BO;
 
 
 public partial class Efetuar_Compra : System.Web.UI.Page
@@ -20,6 +20,7 @@ public partial class Efetuar_Compra : System.Web.UI.Page
     ClsBancoDeDados oDB = new ClsBancoDeDados();
     Tratamento_Erros Tr_Error = new Tratamento_Erros();
     Valicoes_num Val_Num_int = new Valicoes_num();
+    Cliente user = new Cliente();     
 
     //variaveis globais de pagina:
     string strSQL;   
@@ -72,7 +73,15 @@ public partial class Efetuar_Compra : System.Web.UI.Page
                     drp_sala.Items.Add(new ListItem(ds_sala["descricao"].ToString(), ds_sala["codsala"].ToString()));
                 }
             }
-            ds_acompanha.Close();
+            ds_sala.Close();
+
+            //carrega cliente:
+            Cliente_Todos cli_todos = new Cliente_Todos(Cliente_Todos.TipoPesquisaCliente.Todos, 0, "0");
+
+            foreach(Cliente cli in cli_todos)
+            {
+                drp_cliente.Items.Add(new ListItem(cli._NOME, cli._CODCLIENTE.ToString()));
+            }
         }
 
     }

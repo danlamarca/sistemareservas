@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Data.SqlClient;
 using System.Data; 
 using System.Collections.Generic;
@@ -16,8 +15,7 @@ namespace Library1
 
         //Declarações de variaveis:
 
-       string mstrStringConexao;
-            
+       string mstrStringConexao;            
        string strerro_banco = "";
        string mstrStatusConexao = "Não conectado";
        string mstrDescricaoErro = "";
@@ -38,8 +36,7 @@ namespace Library1
         {
             get{return mboolResultadoUltimoComando;}
         }
-
-      
+         
 
 
       #region "Método Construtor"
@@ -47,7 +44,7 @@ namespace Library1
       {
             try
             {
-                mstrStringConexao = @"Server = DANILOLAMARCA; Database = SistemaReservas; Integrated Security = SSPI;";
+                mstrStringConexao = @"Server = RODRIGO-PC\SQLEXPRESS; Database = SistemaReservas; Integrated Security = SSPI;";
 
                 
                 ConectaDB(mstrStringConexao);

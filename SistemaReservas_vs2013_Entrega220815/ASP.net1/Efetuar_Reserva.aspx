@@ -43,7 +43,7 @@
             <font class="atencao">Informe a Data:</font></br>        
             <asp:TextBox id="txt_datareserva" runat=server Width="114px" class="datepicker" Height="16px" />
           </td>           
-          <td></td><td></td><td></td>            
+          <td></td><td></td>            
           <td>
             <font class="atencao">Informe o Horário:</font></br> 
             <asp:DropDownList id="drp_hora" name="drp_hora" runat=server Width="114px">
@@ -60,21 +60,25 @@
             </asp:DropDownList>
            </td>  
 
-          <td></td><td></td><td></td>            
+          <td></td><td></td>            
            <td>
             <font class="atencao">Sala:</font></br> 
             <asp:DropDownList id="drp_sala" name="drp_sala" runat=server Width="130px"></asp:DropDownList>     
            </td>
-           <td></td><td></td><td></td>            
+           <td></td><td></td>           
            <td>
             <font class="atencao">Acompanhamento:</font></br> 
             <asp:DropDownList id="drp_acompanhamento" name="drp_acompanhamento" runat=server Width="130px"></asp:DropDownList>     
            </td>
-          <td></td><td></td><td></td>            
+          <td></td><td></td>          
            <td>
-            <asp:ImageButton Id="Btn_img_Avancar" Visible="true" align="left" ImageURL="Image/botoes/bt_az_proxima.gif" runat="server" onclick="Btn_img_Avancar_Click" />    
-           </td>        
-      </tr> 
+               <font class="atencao">Cliente:</font></br> 
+                <asp:DropDownList id="drp_cliente" name="drp_cliente" runat=server Width="130px"></asp:DropDownList>
+           </td>   
+          <td>
+             <asp:ImageButton Id="Btn_img_Avancar" Visible="true" align="left" ImageURL="Image/botoes/bt_az_proxima.gif" runat="server" onclick="Btn_img_Avancar_Click" />
+          </td>         
+      </tr>    
     </table>
     
     

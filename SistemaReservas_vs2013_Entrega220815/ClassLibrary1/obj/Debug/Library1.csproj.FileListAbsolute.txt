@@ -7,3 +7,8 @@ C:\Users\Danilo Moreira\Source\Repos\sistemareservasNew\SistemaReservas_vs2013_E
 C:\Users\Danilo Moreira\Source\Repos\sistemareservasNew\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
 C:\Users\Danilo Moreira\Source\Repos\sistemareservasNew\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Danilo Moreira\Source\Repos\sistemareservasNew\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Rodrigo\Desktop\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Rodrigo\Desktop\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Rodrigo\Desktop\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Rodrigo\Desktop\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Rodrigo\Desktop\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\Library1.csprojResolveAssemblyReference.cache

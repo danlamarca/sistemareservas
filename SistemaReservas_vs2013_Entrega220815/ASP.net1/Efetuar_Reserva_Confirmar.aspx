@@ -7,7 +7,7 @@
 
 
 <asp:Content ContentPlaceHolderID="MenuHorizontal" runat="server">
-    <ul class="menuhorizontal2">
+<ul class="menuhorizontal2">
 
      <li><a href="Efetuar_Reserva.aspx">Cadastrar</b></font></a>
      </li>      
