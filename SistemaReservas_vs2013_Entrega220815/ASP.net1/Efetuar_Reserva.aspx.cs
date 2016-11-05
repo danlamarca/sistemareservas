@@ -15,7 +15,7 @@ using Library1;
 using Library1.BO;
 
 
-public partial class Efetuar_Compra : System.Web.UI.Page
+public partial class Efetuar_Compra : System.Web.UI.Page      
 {
     ClsBancoDeDados oDB = new ClsBancoDeDados();
     Tratamento_Erros Tr_Error = new Tratamento_Erros();
