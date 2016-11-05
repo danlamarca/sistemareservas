@@ -23,7 +23,7 @@ public partial class Apresentacao : System.Web.UI.Page
         {
             //Usuario:            
             string[] user = new string[2];
-            user = RetUsuario.ValidaUsuario(3);
+            user = RetUsuario.ValidaUsuario(1);
 
             Session["User_Codigo"] = user[0];
             Session["User_Nome"] = user[1];
