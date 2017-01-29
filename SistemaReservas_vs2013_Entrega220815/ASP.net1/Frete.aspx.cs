@@ -23,6 +23,7 @@ public partial class Frete : System.Web.UI.Page
         //41106 = PAC
         decimal frete = CalculaFrete(txt_cep_origem.Text, 41106, 50, 50, 20, 100, 10);
         lbl_valor.Text = frete.ToString();
+        //teste2
     }
 
     private decimal CalculaFrete(string nuCepDestino, int Servico, decimal nVlComprimento, 
