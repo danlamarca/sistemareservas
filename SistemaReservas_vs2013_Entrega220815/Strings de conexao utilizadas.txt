@@ -5,6 +5,9 @@ mstrStringConexao = @"Server = RODRIGO-PC\SQLEXPRESS; Database = SistemaReservas
 --notebook
 mstrStringConexao = @"Server = DANILOLAMARCA; Database = SistemaReservas; Integrated Security = SSPI;";
 
+--notebook
+mstrStringConexao = @"Server = DANI-PC\DESENV1; Database = SistemaReservas; Integrated Security = SSPI;";
+
 
 1) alterar no arquivo webconfig
 2) alterar na classe de conexão de banco de dados ("clsbancodedados")
