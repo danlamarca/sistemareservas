@@ -15,6 +15,8 @@ namespace Library1.BO
         private Cliente CLIENTE;
         private int CODSALA = 0;
         private int CODUSUARIO = 0;
+        private DateTime DATAINICIO=Convert.ToDateTime("01/01/1800");
+        private DateTime DATAFIM = Convert.ToDateTime("01/01/2100");
         private TipoPesquisaReserva TIPOPESQ = TipoPesquisaReserva.porTodos;  
 
         StringBuilder sql = new StringBuilder();
@@ -51,6 +53,16 @@ namespace Library1.BO
             get { return TIPOPESQ; }
             set { TIPOPESQ = value; }
         }
+        public DateTime _DATAINICIO
+        {
+            get {return DATAINICIO;}
+            set { DATAINICIO = value; }
+        }
+        public DateTime _DATAFIM
+        {
+            get { return _DATAFIM; }
+            set { DATAFIM = value; }
+        }
         #endregion
 
         #region Construtores
@@ -78,37 +90,47 @@ namespace Library1.BO
             this._TIPOPESQ = TIPOPESQ;
             Carrega();
         }
+
+        public Reserva_Todos(DateTime datainicio, DateTime datafim)
+        {
+            this._DATAINICIO = datainicio;
+            this._DATAFIM = datafim;
+            this._TIPOPESQ = TipoPesquisaReserva.porData;
+            Carrega();
+        }
         #endregion
 
         #region Métodos
         private void Carrega()
         {
-            sql.Append("Select CODRESERVA,CODSALA,CODUSUARIO,DATAINICIO,DATAFIM,DESCRICAO,CODACOMPANHAMENTOITEM,CLIENTE ");
+            sql.Append("Select CODRESERVA,CODSALA,CODUSUARIO,DATAINICIO,DATAFIM,COALESCE(DESCRICAO,'S/DESC') AS DESCRICAO,CODACOMPANHAMENTOITEM,COALESCE(CLIENTE,0) AS CLIENTE ");
             sql.Append("from TB_RESERVA with(nolock) ");
 
             if (TIPOPESQ == TipoPesquisaReserva.porReserva)
             {
                 sql.Append("where CODRESERVA=@CODRESERVA ");
-
                 sql.Replace("@CODRESERVA", CODRESERVA.ToString());
             }
             else if (TIPOPESQ == TipoPesquisaReserva.porCliente)
             {
                 sql.Append("where CLIENTE=@CLIENTE ");
-
                 sql.Replace("@CLIENTE", CLIENTE._CODCLIENTE.ToString());
             }
             else if (TIPOPESQ == TipoPesquisaReserva.porSala)
             {
                 sql.Append("where CODSALA=@CODSALA ");
-
                 sql.Replace("@CODSALA", CODSALA.ToString());
             }
             else if (TIPOPESQ == TipoPesquisaReserva.porUsuario)
             {
                 sql.Append("where CODUSUARIO=@CODUSUARIO ");
-
                 sql.Replace("@CODUSUARIO", CODUSUARIO.ToString());
+            }
+            else if (TIPOPESQ == TipoPesquisaReserva.porData)
+            {
+                sql.Append("where DATAINICIO>=@DATAINICIO AND DATAFIM <=@DATAFIM ");
+                sql.Replace("@DATAINICIO", "'" + DATAINICIO.ToString() + "'");
+                sql.Replace("@DATAFIM", "'" + DATAFIM.ToString() + "'");
             }
             ClsBancoDeDados oDB = new ClsBancoDeDados();
             DataTableReader ds_reserva= oDB.NewReader(sql.ToString());
@@ -141,7 +163,8 @@ namespace Library1.BO
             porCliente,
             porSala,
             porUsuario,
-            porTodos  
+            porTodos,
+            porData
         }
     }
 }
