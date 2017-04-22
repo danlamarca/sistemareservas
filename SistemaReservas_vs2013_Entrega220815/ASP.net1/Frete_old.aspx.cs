@@ -4,26 +4,31 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Correios;
 
-public partial class frete : System.Web.UI.Page
+public partial class Frete : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-
+        /*       
+            Referencias:
+            http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx?op=CalcPrecoPrazo
+            http://devbrasil.net/profiles/blogs/calculo-de-frete-com-webservice-dos-correios 
+         */
     }
 
-    protected void btn_frete_click(object sender, EventArgs e)
+    protected void btn_calc_frete_click(object sender, EventArgs e)
     {
         //40010 = Sedex
         //41106 = PAC
-        decimal frete = CalculaFrete("11530040", 41106, 50, 50, 20, 100, 1);
-        txt_frete.Text = frete.ToString();
-        
+        decimal frete = CalculaFrete(txt_cep_origem.Text, 41106, 50, 50, 20, 100, 10);
+        lbl_valor.Text = frete.ToString();
+        //teste10
     }
 
-    private decimal CalculaFrete(string nuCepDestino, int Servico, decimal nVlComprimento,
+    private decimal CalculaFrete(string nuCepDestino, int Servico, decimal nVlComprimento, 
                                  decimal nVlAltura, decimal nVlLargura, decimal nVlDiametro, decimal nuPeso)
-    {
+    {               
         // Dados da empresa, se tiver contrato com os Correios
         string nCdEmpresa = string.Empty;
         string sDsSenha = string.Empty;
@@ -57,13 +62,13 @@ public partial class frete : System.Web.UI.Page
             //caso tudo certo entao retorna o valor:
             if (retornoCorreios.Servicos[0].Erro == "0")
             {
-                string prazo = "dias: " + retornoCorreios.Servicos[0].PrazoEntrega;
+                lbl_prazo.Text = "dias: " + retornoCorreios.Servicos[0].PrazoEntrega;
                 return decimal.Parse(retornoCorreios.Servicos[0].Valor);
             }
             else
             {
                 string MsgErro = retornoCorreios.Servicos[0].MsgErro;
-                string erro = MsgErro;
+                lbl_erro.Text = MsgErro;
                 return 0;
             }
         }
