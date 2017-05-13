@@ -17,7 +17,7 @@ public partial class Mensagens : System.Web.UI.Page
 {
     ClsBancoDeDados oDB = new ClsBancoDeDados();
     Tratamento_Erros Tr_Error = new Tratamento_Erros();
-    Valicoes_num Val_Num_int = new Valicoes_num();
+    Valicoes_num Val_Num_int = new Valicoes_num();  
 
     //variaveis
     string strSQL;
