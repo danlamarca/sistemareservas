@@ -135,7 +135,8 @@
                         <!--<menu><font class="atencao2">Editar/Excluir</font></menu>--> 
                         <menu><a href="ConsultarReservas.aspx" class="atencao2">Consultar Reserva</a></menu>  
                         <menu><a href="Cad_Cliente.aspx" class="atencao2">Cadastro Cliente</a></menu> 
-                        <menu><a href="" class="atencao2">Consultar Cliente</a></menu>                                                                    
+                        <menu><a href="" class="atencao2">Consultar Cliente</a></menu> 
+                        <menu><a href="PagSeguro_Teste.aspx" class="atencao2">Teste PagSeguro</a></menu>                                                                    
                         </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>                             
                     </div>
                 </td>

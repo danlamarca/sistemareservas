@@ -44,7 +44,7 @@ namespace Library1
       {
             try
             {
-                mstrStringConexao = @"Server = DANI-PC\DESENV1; Database = SistemaReservas; Integrated Security = SSPI;";
+                mstrStringConexao = @"Server = DANILO-PC\SQLEXPRESS; Database = SistemaReservas; Integrated Security = SSPI;";
                 ConectaDB(mstrStringConexao);
             }
             catch
