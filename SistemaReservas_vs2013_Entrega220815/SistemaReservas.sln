@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library1", "ClassLibrary1\Library1.csproj", "{3D0872AC-6695-476A-8A0F-115AEEA1DF54}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.net1", "ASP.net1\", "{52324ED1-EB98-4F99-AA09-D3483EEF4ED1}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
 		ProjectReferences = "{3D0872AC-6695-476A-8A0F-115AEEA1DF54}|ClassLibrary1.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/ASP.net1"
 		Debug.AspNetCompiler.PhysicalPath = "ASP.net1\"
