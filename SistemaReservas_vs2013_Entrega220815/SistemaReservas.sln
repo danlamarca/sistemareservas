@@ -7,8 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library1", "ClassLibrary1\L
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "ASP.net1", "ASP.net1\", "{52324ED1-EB98-4F99-AA09-D3483EEF4ED1}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
-		ProjectReferences = "{3D0872AC-6695-476A-8A0F-115AEEA1DF54}|ClassLibrary1.dll;{babc5658-6afd-4f8e-81f1-434553663d99}|Uol.PagSeguro.dll;"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{3D0872AC-6695-476A-8A0F-115AEEA1DF54}|ClassLibrary1.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/ASP.net1"
 		Debug.AspNetCompiler.PhysicalPath = "ASP.net1\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ASP.net1\"
