@@ -7,7 +7,9 @@
 <link href="css/jquery-ui-1.10.3.custom.css" rel="stylesheet" />
 <script src="JS/jquery-1.9.1.js"></script>
 <script src="JS/jquery-ui-1.10.3.custom.js"></script>
-<script type src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://stc.sandbox.pagseguro.uol.com.br/pagseguro/api/v2/checkout/pagseguro.directpayment.js"></script>
+<!--<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>-->
 <head id="Head1" runat="server">
     <title>Cadastro Reservas</title>
      <style type="text/css">

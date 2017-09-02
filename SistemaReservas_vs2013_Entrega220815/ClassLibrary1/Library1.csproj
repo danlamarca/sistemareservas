@@ -56,6 +56,7 @@
   <ItemGroup>
     <Compile Include="BO\Cliente.cs" />
     <Compile Include="BO\Cliente_Todos.cs" />
+    <Compile Include="BO\Produto.cs" />
     <Compile Include="BO\Reserva.cs" />
     <Compile Include="BO\Reserva_Todos.cs" />
     <Compile Include="ClsBancoDeDados.cs" />
