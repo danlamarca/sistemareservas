@@ -23,3 +23,23 @@ C:\Users\Danilo\Source\Repos\sistemareservas\SistemaReservas_vs2013_Entrega22081
 C:\Users\Danilo\Source\Repos\sistemareservas\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\Users\Danilo\Source\Repos\sistemareservas\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
 C:\Users\Danilo\Source\Repos\sistemareservas\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\Library1.csprojResolveAssemblyReference.cache
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\unirest-net.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\Library1.csproj.App.config
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\Library1.csprojResolveAssemblyReference.cache
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Pessoal\Google Drive\Programaçao\SistemaReservas versoes\Repos\sistemareservas\sistemareservas2\SistemaReservas_vs2013_Entrega220815\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

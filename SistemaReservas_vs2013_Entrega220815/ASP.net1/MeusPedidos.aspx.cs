@@ -18,14 +18,15 @@ public partial class MeusPedidos : System.Web.UI.Page
     protected void btn_importar_Click(object sender, EventArgs e)
     {
         //string teste = JsonConvert.DeserializeObject<Cliente>(variavelJson);
+        //string json;
 
-        HttpResponse<string> jsonResponse = Unirest.post("http://httpbin.org/post")
-        .header("accept", "application/json")
-        .field("parameter", "value")
-        .field("foo", "bar")
-        .asJson<MyClass>();
+        //HttpResponse<string> jsonResponse = Unirest.post("http://httpbin.org/post")
+        //.header("accept", "application/json")
+        //.field("parameter", "value")
+        //.field("foo", "bar")
+        //.asJson<json>();
 
-        string resposta  = jsonResponse.Body; 
+        //string resposta  = jsonResponse.Body; 
 
     }
 }
